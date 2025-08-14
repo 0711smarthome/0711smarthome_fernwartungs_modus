@@ -21,4 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Hassfest
-        uses: "home-assistant/actions/hassfest@master"1
+        uses: "home-assistant/actions/hassfest@master"
