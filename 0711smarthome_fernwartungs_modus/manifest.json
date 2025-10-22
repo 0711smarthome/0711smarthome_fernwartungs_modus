@@ -1,0 +1,16 @@
+{
+  "domain": "0711smarthome_fernwartungs_modus",
+  "name": "0711 Smart Home Fernwartungs Modus",
+  "config_flow": true,
+  "documentation": "https://0711smarthome.de",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://0711smarthome.de",
+  "version": "1.1.1",
+  "codeowners": ["@0711smarthome"], 
+  "requirements": [],
+  "dependencies": [],
+  "hacs": {
+    "supported_features": ["DOMAIN_SETUP"], 
+    "homeassistant": "2024.10.0" 
+  }
+}
