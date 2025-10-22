@@ -6,7 +6,11 @@
   "iot_class": "local_polling",
   "issue_tracker": "https://0711smarthome.de",
   "version": "1.1.1",
-  "codeowners": "0711 Smart Home",
+  "codeowners": ["@0711smarthome"], 
   "requirements": [],
-  "dependencies": []
+  "dependencies": [],
+  "hacs": {
+    "supported_features": ["DOMAIN_SETUP"], 
+    "homeassistant": "2024.10.0" 
+  }
 }
