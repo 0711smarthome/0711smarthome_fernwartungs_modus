@@ -1,4 +1,8 @@
 {
-  "name": "0711 Smart Home Fernwartungs Modus",
-  "render_readme": true
+  "name": "0711smarthome_fernwartungs_modus",
+  "repository": "0711smarthome/0711smarthome_fernwartungs_modus",
+  "category": "integration",
+  "homeassistant": "2021.6.0",
+  "dependencies": [],
+  "codeowners": ["@0711smarthome"]
 }
