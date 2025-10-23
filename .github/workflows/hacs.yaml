@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   hacs:
@@ -14,7 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: hacs/action@main
+      
+      - name: HACS Validation
+        uses: hacs/action@main
         with:
           # category muss "integration" sein
           category: "integration"
