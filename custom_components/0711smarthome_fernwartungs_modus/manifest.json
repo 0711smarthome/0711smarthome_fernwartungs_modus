@@ -11,6 +11,6 @@
   "dependencies": [],
   "hacs": {
     "supported_features": ["DOMAIN_SETUP"], 
-    "homeassistant": "2024.10.0",
+    "homeassistant": "2024.10.0"
   }
 }
