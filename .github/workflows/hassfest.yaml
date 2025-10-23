@@ -14,4 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: "home-assistant/actions/hassfest@master"
+
+      # 1. Erstelle das erwartete Verzeichnis für die Validierung
+      - name: Create component directory
+        run: |
+          mkdir -p custom_components/0711smarthome_fernwartungs_modus
+
+      # 2. Verschiebe alle Komponenten-Dateien in das Verzeichnis
+      - name: Move files into component directory
+        run: |
+          mv __init__.py config_flow.py const.py manifest.json switch.py strings.json custom_components/0711smarthome_fernwartungs_modus/
+
+      # 3. Führe die Hassfest-Validierung aus
+      - name: Run Hassfest
+        uses: "home-assistant/actions/hassfest@master"
