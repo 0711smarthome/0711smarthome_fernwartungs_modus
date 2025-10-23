@@ -43,7 +43,7 @@ class AdminUserSwitch(SwitchEntity):
             name=f"Fernwartungs Modus für {self._user.name}",
             manufacturer="0711 Smart Home",
             model="Fernwartungsmodus",
-            sw_version="1.1.1",
+            sw_version="1.1.6",
             entry_type="service",
         )
 
@@ -66,4 +66,5 @@ class AdminUserSwitch(SwitchEntity):
 
     async def async_update(self) -> None:
         """Fetch latest state of the user."""
+
         self._user = await self.hass.auth.async_get_user(self._user.id)
